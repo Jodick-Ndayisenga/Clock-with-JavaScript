@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>smart watch</title>
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="someScript.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <h2>Corriger La Montre</h2>
+      <input
+        type="number"
+        class="hr"
+        id="hr"
+        placeholder="hour"
+        maxlength="2"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type="number"
+        maxlength="2"
+      />
+
+      <input
+        type="number"
+        class="min"
+        id="mi"
+        placeholder="min"
+        maxlength="2"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type="number"
+        maxlength="2"
+      />
+
+      <input
+        type="number"
+        class="sc"
+        id="sc"
+        placeholder="sec"
+        maxlength="2"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type="number"
+        maxlength="2"
+      />
+      <br /><br />
+      <input type="submit" class="sub" id="subm" value="Corriger" />
+    </form>
+    <div class="welcome">
+      <h1 class="worDisplay"></h1>
+    </div>
+    <div class="bigOfAll">
+      <div class="chain1 special1"><h6>......</h6></div>
+      <div class="outerlayer">
+        <div class="middle">
+          <div class="coueur">
+            <h1 class="hours1">20</h1>
+            <span>:</span>
+            <h1 class="munites">00</h1>
+            <span>:</span>
+            <h3 class="seconds">00</h3>
+          </div>
+        </div>
+      </div>
+      <div class="chain1 special2"><h6>......</h6></div>
+    </div>
+  </body>
+</html>
